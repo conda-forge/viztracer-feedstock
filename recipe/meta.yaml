@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true   # [py2k]
+  skip: true   # [py2k,python<3.7]
   entry_points:
     - viztracer = viztracer:main
     - vdb = viztracer:sim_main
@@ -25,9 +25,9 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
-    - python >=3.7
+    - python
   run:
-    - python >=3.7
+    - python
     - rich
     - orjson
 
