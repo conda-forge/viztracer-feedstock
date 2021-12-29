@@ -11,7 +11,7 @@ source:
   sha256: 60517a923876ce04aa6310952ca7d3ffdeaf306a6623da9211ca15fcab48984c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k]
   entry_points:
     - viztracer = viztracer:main
