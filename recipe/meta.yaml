@@ -1,5 +1,5 @@
 {% set name = "viztracer" %}
-{% set version = "0.15.6" %}
+{% set version = "0.16.0" %}
 
 
 package:
@@ -8,14 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/viztracer-{{ version }}.tar.gz
-  sha256: cfdbb2ae1a00f4903ec80ac1f9fadaf8f777f3d61082b98abd993795bd3da282
+  sha256: 934a99d4985f4bde23c8039cef4ab248f4b55e799b785c33b55fe314d29fac80
 
 build:
   number: 0
   skip: true  # [py2k]
   entry_points:
     - viztracer = viztracer:main
-    - vdb = viztracer:sim_main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -30,7 +29,7 @@ requirements:
     - python
     - rich
     - orjson
-    - objprint >=0.1.3
+    - objprint >0.1.3
 
 test:
   imports:
@@ -38,7 +37,6 @@ test:
   commands:
     - pip check
     - viztracer --help
-    - vdb --help
   requires:
     - pip
 
