@@ -15,7 +15,7 @@ build:
   skip: true  # [py2k]
   entry_points:
     - viztracer = viztracer:main
-    - vdb = viztracer:sim_main
+    - vizviewer = viztracer:viewer_main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -28,7 +28,6 @@ requirements:
     - python
   run:
     - python
-    - rich
     - orjson
     - objprint >=0.1.3
 
@@ -38,7 +37,7 @@ test:
   commands:
     - pip check
     - viztracer --help
-    - vdb --help
+    - vizviewer --help
   requires:
     - pip
 
