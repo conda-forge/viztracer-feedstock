@@ -15,8 +15,8 @@ build:
 
   skip: true  # [py2k]
   entry_points:
-    - viztracer = viztracer:main
-    - vizviewer = viztracer:viewer_main
+    - viztracer = viztracer.maim:main
+    - vizviewer = viztracer.viewer:viewer_main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
