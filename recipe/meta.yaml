@@ -11,12 +11,12 @@ source:
   sha256: 6dd9592bb799bbabf863d850b24b77fd9a33a5648c00b9223a824377998fb8a3
 
 build:
-  number: 1
+  number: 2
 
   skip: true  # [py2k]
   entry_points:
-    - viztracer = viztracer:main
-    - vizviewer = viztracer:viewer_main
+    - viztracer = viztracer.main:main
+    - vizviewer = viztracer.viewer:viewer_main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
