@@ -1,5 +1,5 @@
 {% set name = "viztracer" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/viztracer-{{ version }}.tar.gz
-  sha256: 1e37da741242d63ce2be0c6d7878aba7267e9cd2592c5823c2383128ea5b943a
+  sha256: e8da6faa73d68911d93b676fa2c94bfa20966e23b529e3cbd1c6816f7de83cd7
 
 build:
   number: 0
