@@ -11,7 +11,7 @@ source:
   sha256: dcd4b5ddcc3a40ee79a584406d984cb4d40bc3301a6c9015d8949d4445fe9346
 
 build:
-  number: 0
+  number: 1
 
   skip: true  # [py2k]
   entry_points:
